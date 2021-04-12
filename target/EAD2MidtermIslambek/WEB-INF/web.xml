@@ -1,0 +1,124 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>log</servlet-name>
+    <servlet-class>org.example.Islambek.UserLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>log</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>Adlog</servlet-name>
+    <servlet-class>org.example.Islambek.AdminLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Adlog</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>reg</servlet-name>
+    <servlet-class>org.example.Islambek.UserRegistrationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>reg</servlet-name>
+    <url-pattern>/UserRegistrationServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>userLogout</servlet-name>
+    <servlet-class>org.example.Islambek.UserLogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>userLogout</servlet-name>
+    <url-pattern>/UserLogoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>logutF</filter-name>
+    <filter-class>org.example.Islambek.filters.UserLogoutFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>logutF</filter-name>
+    <url-pattern>/UserLogoutServlet</url-pattern>
+  </filter-mapping>
+
+
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>org.example.Islambek.AddBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/AddBookServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateBook</servlet-name>
+    <servlet-class>org.example.Islambek.UpdateBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateBook</servlet-name>
+    <url-pattern>/UpdateBookServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteBook</servlet-name>
+    <servlet-class>org.example.Islambek.DeleteBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteBook</servlet-name>
+    <url-pattern>/DeleteBookServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewBooks</servlet-name>
+    <servlet-class>org.example.Islambek.ViewBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewBooks</servlet-name>
+    <url-pattern>/ViewBookServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewIssuedBooks</servlet-name>
+    <servlet-class>org.example.Islambek.ViewIssuedBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewIssuedBooks</servlet-name>
+    <url-pattern>/ViewIssuedBookServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>IssueBook</servlet-name>
+    <servlet-class>org.example.Islambek.IssueBookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>IssueBook</servlet-name>
+    <url-pattern>/IssueBookServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
